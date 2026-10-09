@@ -1,11 +1,11 @@
 
 
 :root {
-  --primary-color: #3e2723;   /* Café oscuro elegante */
-  --accent-color: #8d6e63;    /* Café madera claro */
-  --gold-color: #c5a059;      /* Dorado estilo Sherlock */
-  --bg-color: #fdfbf7;        /* Fondo crema/papel antiguo */
-  --text-color: #2c2c2c;      /* Texto gris oscuro/carbón */
+  --primary-color: #3e2723;   
+  --accent-color: #8d6e63;    
+  --gold-color: #c5a059;      
+  --bg-color: #fdfbf7;        
+  --text-color: #2c2c2c;      
   --card-bg: #ffffff;
 }
 
