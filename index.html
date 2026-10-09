@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Biblioteca de Sherlock | Restaurante & Librería</title>
+  
+ 
   <link rel="stylesheet" href="./style.css">
+  
+ 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
- 
+
   <nav class="navbar">
     <div class="logo">🔍 La Biblioteca de Sherlock</div>
     <ul class="nav-links">
@@ -18,6 +23,7 @@
       <li><a href="#libreria">Librería</a></li>
       <li><a href="#ubicacion">Sucursales</a></li>
       <li><a href="#eventos">Eventos & Reservaciones</a></li>
+      <li><a href="#contador">Pistas</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
@@ -25,31 +31,35 @@
 
   <header id="inicio" class="hero-section">
     <div class="hero-content">
-      <h1>"Elemental, mi querido lector"</h1>
-      <p>Bienvenido a <strong>La Biblioteca de Sherlock</strong>, un restaurante y librería creado para acercarte a las grandes historias mientras disfrutas de una excelente experiencia gastronómica.</p>
-      <a href="#menu" class="btn-primary">Explorar Menú</a>
-      <a href="#libreria" class="btn-secondary">Ver Catálogo de Libros</a>
+     
+      <h1 data-aos="fade-down">"Elemental, mi querido lector"</h1>
+      <p data-aos="fade-up">Bienvenido a <strong>La Biblioteca de Sherlock</strong>, un restaurante y librería creado para acercarte a las grandes historias mientras disfrutas de una excelente experiencia gastronómica.</p>
+      <div data-aos="zoom-in">
+        <a href="#menu" class="btn-primary">Explorar Menú</a>
+        <a href="#libreria" class="btn-secondary">Ver Catálogo de Libros</a>
+      </div>
     </div>
   </header>
 
- 
+
   <section class="riddle-banner">
     <p>🔍 <em>Acertijo del Detective: "Tengo hojas pero no soy árbol, hablo sin voz y te llevo a otros mundos. ¿Qué soy?"</em></p>
   </section>
 
 
   <section id="nosotros" class="section-container">
-    <h2>Nosotros (Historia, Misión y Calidad)</h2>
+  
+    <h2 data-aos="fade-right">Nosotros (Historia, Misión y Calidad)</h2>
     <div class="card-grid">
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <h3>Nuestra Historia</h3>
         <p>Nacimos del amor por la literatura clásica de Sir Arthur Conan Doyle y la pasión por el café de especialidad y la alta cocina.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-left" data-aos-delay="100">
         <h3>Misión</h3>
         <p>Acercar a nuestros invitados a los libros y la cultura en un ambiente inmersivo donde se sientan como el mismísimo detective resolviendo misterios.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-left" data-aos-delay="200">
         <h3>Calidad Garantizada</h3>
         <p>Seleccionamos granos de café de alta especialidad y platillos preparados con ingredientes frescos y recetas temáticas de época.</p>
       </div>
@@ -58,25 +68,25 @@
 
 
   <section id="menu" class="section-container bg-alt">
-    <h2>Menú de la Cafetería & Restaurante</h2>
+    <h2 data-aos="fade-left">Menú de la Cafetería & Restaurante</h2>
     <div class="card-grid">
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>☕ Bebidas Calientes</h3>
         <p>Espresso 221B, Capuchino Baker Street, Té Negro Victoria.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
         <h3>🧊 Bebidas Frías</h3>
         <p>Cold Brew Nepomuk, Frappé de Menta & Chocolate, Infusiones Heladas.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
         <h3>🍽️ Platillos Fuertes</h3>
         <p>Sandwich Club Scotland Yard, Ensalada Watson, Roast Beef Tradicional.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
         <h3>🍰 Postres</h3>
         <p>Pastel de Moras Estudio en Escarlata, Tarta de Manzana Dulce Conan.</p>
       </div>
-      <div class="card Highlight-card">
+      <div class="card highlight-card" data-aos="zoom-in" data-aos-delay="400">
         <h3>⭐ Los Favoritos de Holmes</h3>
         <p>La combinación especial de café de prensa francesa con galletas artesanales de especias.</p>
       </div>
@@ -85,10 +95,10 @@
 
 
   <section id="libreria" class="section-container">
-    <h2>Librería & Géneros Literarios</h2>
+    <h2 data-aos="fade-up">Librería & Géneros Literarios</h2>
     <p class="section-subtitle">Participa en nuestros acertijos temáticos de acuerdo al libro del mes.</p>
     
-    <div class="genre-grid">
+    <div class="genre-grid" data-aos="fade-up" data-aos-delay="100">
       <span class="badge">Romance</span>
       <span class="badge">Clásicos</span>
       <span class="badge">Misterio & Policiaco</span>
@@ -99,16 +109,26 @@
     </div>
   </section>
 
+  
+  <section id="contador" class="section-container bg-alt">
+    <h2 data-aos="fade-down">Pistas Investigadas por los Lectores</h2>
+    <p>Haz clic en el botón para registrar cada pista descubierta en la biblioteca:</p>
+  
+    <h2 id="contador-clicks" class="counter-display">0</h2>
 
-  <section id="ubicacion" class="section-container bg-alt">
-    <h2>Sucursales y Ubicación</h2>
+    <button id="btn-interactivo" class="btn-primary">Resolver Pista (Hacer clic)</button>
+  </section>
+
+  
+  <section id="ubicacion" class="section-container">
+    <h2 data-aos="fade-right">Sucursales y Ubicación</h2>
     <div class="card-grid">
-      <div class="card">
+      <div class="card" data-aos="fade-right">
         <h3>📍 Sucursal León</h3>
         <p><strong>Ubicación:</strong> Zona Norte, León, Guanajuato.</p>
         <p><strong>Horarios:</strong> Lunes a Domingo de 8:00 AM a 10:00 PM.</p>
       </div>
-      <div class="card highlight-card">
+      <div class="card highlight-card" data-aos="fade-left">
         <h3>🇬🇧 Dirección Mítica (Guiño Temático)</h3>
         <p><strong>Dirección:</strong> 221B Baker Street, Londres, Inglaterra.</p>
         <p><em>Siente la atmósfera victoriana de las famosas historias del detective.</em></p>
@@ -116,10 +136,40 @@
     </div>
   </section>
 
-  <!-- EVENTOS Y RESERVACIONES -->
-  <section id="eventos" class="section-container">
-    <h2>Eventos Especiales & Pedidos</h2>
+
+  <section id="eventos" class="section-container bg-alt">
+    <h2 data-aos="fade-up">Eventos Especiales & Pedidos</h2>
     <div class="card-grid">
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>📅 Eventos Especiales</h3>
-        <p>Cada mes organizamos actividades temáticas basadas en las obras
+        <p>Cada mes organizamos actividades temáticas basadas en las obras e historias de Sir Arthur Conan Doyle, lecturas dramatizadas y noches de trivias.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>🛋️ Reservaciones</h3>
+        <p>Reserva tu mesa temático-literaria con anticipación para disfrutar con tus amigos o club de lectura.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>🛍️ Pedidos Para Llevar</h3>
+        <p>Haz tu pedido de café, platillos o libros para recoger rápidamente en sucursal.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="contacto" class="footer">
+    <div class="footer-content">
+      <h3>Contacto & Redes Sociales</h3>
+      <p>Síguenos y entérate de los libros del mes y nuevos acertijos:</p>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+        <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+      </div>
+      <p class="copyright">© 2026 La Biblioteca de Sherlock - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
