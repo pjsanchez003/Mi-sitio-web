@@ -3,40 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Biblioteca de Sherlock | Cafetería & Librería</title>
+  <title>La Biblioteca de Sherlock | Restaurante & Librería</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>🔍 La Biblioteca de Sherlock ☕📖</h1>
-    <p>Un espacio donde los libros clásicos se combinan con el mejor café artesanal</p>
+ 
+  <nav class="navbar">
+    <div class="logo">🔍 La Biblioteca de Sherlock</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#libreria">Librería</a></li>
+      <li><a href="#ubicacion">Sucursales</a></li>
+      <li><a href="#eventos">Eventos & Reservaciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <header id="inicio" class="hero-section">
+    <div class="hero-content">
+      <h1>"Elemental, mi querido lector"</h1>
+      <p>Bienvenido a <strong>La Biblioteca de Sherlock</strong>, un restaurante y librería creado para acercarte a las grandes historias mientras disfrutas de una excelente experiencia gastronómica.</p>
+      <a href="#menu" class="btn-primary">Explorar Menú</a>
+      <a href="#libreria" class="btn-secondary">Ver Catálogo de Libros</a>
+    </div>
   </header>
 
-  <main>
-    <section class="catalog-container">
-      <article class="product-card">
-        <h3>Café Elemental</h3>
-        <p>Espresso doble con un toque de canela y crema batida.</p>
-        <p class="price">$55.00 MXN</p>
-        <button class="btn-order">Ordenar</button>
-      </article>
+ 
+  <section class="riddle-banner">
+    <p>🔍 <em>Acertijo del Detective: "Tengo hojas pero no soy árbol, hablo sin voz y te llevo a otros mundos. ¿Qué soy?"</em></p>
+  </section>
 
-      <article class="product-card">
-        <h3>Obras Completas: Sherlock Holmes</h3>
-        <p>Edición de lujo con cubierta de tapa dura.</p>
-        <p class="price">$380.00 MXN</p>
-        <button class="btn-order">Comprar Libro</button>
-      </article>
 
-      <article class="product-card">
-        <h3>Capuchino Baker Street</h3>
-        <p>Acompañado de galletas artesanales de vainilla.</p>
-        <p class="price">$65.00 MXN</p>
-        <button class="btn-order">Ordenar</button>
-      </article>
-    </section>
-  </main>
+  <section id="nosotros" class="section-container">
+    <h2>Nosotros (Historia, Misión y Calidad)</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Nuestra Historia</h3>
+        <p>Nacimos del amor por la literatura clásica de Sir Arthur Conan Doyle y la pasión por el café de especialidad y la alta cocina.</p>
+      </div>
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Acercar a nuestros invitados a los libros y la cultura en un ambiente inmersivo donde se sientan como el mismísimo detective resolviendo misterios.</p>
+      </div>
+      <div class="card">
+        <h3>Calidad Garantizada</h3>
+        <p>Seleccionamos granos de café de alta especialidad y platillos preparados con ingredientes frescos y recetas temáticas de época.</p>
+      </div>
+    </div>
+  </section>
 
-</body>
-</html>
+
+  <section id="menu" class="section-container bg-alt">
+    <h2>Menú de la Cafetería & Restaurante</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>☕ Bebidas Calientes</h3>
+        <p>Espresso 221B, Capuchino Baker Street, Té Negro Victoria.</p>
+      </div>
+      <div class="card">
+        <h3>🧊 Bebidas Frías</h3>
+        <p>Cold Brew Nepomuk, Frappé de Menta & Chocolate, Infusiones Heladas.</p>
+      </div>
+      <div class="card">
+        <h3>🍽️ Platillos Fuertes</h3>
+        <p>Sandwich Club Scotland Yard, Ensalada Watson, Roast Beef Tradicional.</p>
+      </div>
+      <div class="card">
+        <h3>🍰 Postres</h3>
+        <p>Pastel de Moras Estudio en Escarlata, Tarta de Manzana Dulce Conan.</p>
+      </div>
+      <div class="card Highlight-card">
+        <h3>⭐ Los Favoritos de Holmes</h3>
+        <p>La combinación especial de café de prensa francesa con galletas artesanales de especias.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="libreria" class="section-container">
+    <h2>Librería & Géneros Literarios</h2>
+    <p class="section-subtitle">Participa en nuestros acertijos temáticos de acuerdo al libro del mes.</p>
+    
+    <div class="genre-grid">
+      <span class="badge">Romance</span>
+      <span class="badge">Clásicos</span>
+      <span class="badge">Misterio & Policiaco</span>
+      <span class="badge">Terror</span>
+      <span class="badge">Académicos</span>
+      <span class="badge">Novelas Históricas</span>
+      <span class="badge">Biografías</span>
+    </div>
+  </section>
+
+
+  <section id="ubicacion" class="section-container bg-alt">
+    <h2>Sucursales y Ubicación</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>📍 Sucursal León</h3>
+        <p><strong>Ubicación:</strong> Zona Norte, León, Guanajuato.</p>
+        <p><strong>Horarios:</strong> Lunes a Domingo de 8:00 AM a 10:00 PM.</p>
+      </div>
+      <div class="card highlight-card">
+        <h3>🇬🇧 Dirección Mítica (Guiño Temático)</h3>
+        <p><strong>Dirección:</strong> 221B Baker Street, Londres, Inglaterra.</p>
+        <p><em>Siente la atmósfera victoriana de las famosas historias del detective.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS Y RESERVACIONES -->
+  <section id="eventos" class="section-container">
+    <h2>Eventos Especiales & Pedidos</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>📅 Eventos Especiales</h3>
+        <p>Cada mes organizamos actividades temáticas basadas en las obras
