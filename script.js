@@ -1,5 +1,5 @@
 
-console.log("¡Bienvenido a La Biblioteca de Sherlock! Elementales saludos, detective.");
+console.log("¡Bienvenido a La Biblioteca de Sherlock! Elementales saludos, estimado detective.");
 
 
 let contador = 0;
@@ -14,6 +14,8 @@ function incrementarContador() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  
+
   const boton = document.getElementById("btn-interactivo");
   if (boton) {
     boton.addEventListener("click", incrementarContador);
@@ -22,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (typeof AOS !== 'undefined') {
     AOS.init({
-      duration: 1000,
-      once: true
+      duration: 800,  
+      once: true      
     });
   }
 });
